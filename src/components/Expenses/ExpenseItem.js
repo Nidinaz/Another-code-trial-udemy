@@ -15,9 +15,13 @@ import React, {useState} from 'react';
   // the overal function is not called again because a variable changed
   // useState is a Hook, should be in a funciton, not outside, not in nested
   // all Hooks have a use at the beginning
-  // useState is a special kind of variable
-  // the useState is in Memory and will be called agan when setTitle() is called
-  //---and we want to perfrome the function again, when the state changes
+  // setTitle is a special kind of variable 
+  //---and we want to perform the function again, when the state changes
+  //useState - react voert de functie opnieuw uit als de state verandert wordt
+  //state is a keyconcept in react
+  //useState registers some stat (some value as state) for the component in which it is beeing called
+  // State is seperated on a per componant instance basis
+
 
 const ExpenseItem = (props) => {
 
@@ -37,7 +41,7 @@ const ExpenseItem = (props) => {
         <h2>{title}</h2>
         <div className="expense-item__price">{props.amount}</div>
       </div>
-      <button onClick={clickHandler()}>Change Title</button>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 }

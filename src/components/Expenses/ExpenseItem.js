@@ -16,14 +16,16 @@ const ExpenseItem = (props) => {
   // useState is a Hook, should be in a funciton, not outside, not in nested
   // all Hooks have a use at the beginning
   // useState is a special kind of variable
-  // 
+  // the useState is in Memory and will be called agan when setTitle() is called
+  //---and we want to perfrome the function again, when the state changes
 
 
-  let title = props.title;
+
+  const[title, setTitle]  = useState(props.title);
 
   const clickHandler = () => {
-    title = 'Updated'
-    console.log('Clicked!');
+    setTitle('Updated!');
+    console.log(title);
   };
 
 
@@ -34,7 +36,7 @@ const ExpenseItem = (props) => {
         <h2>{title}</h2>
         <div className="expense-item__price">{props.amount}</div>
       </div>
-      <button onClick={clickHandler()}>Change</button>
+      <button onClick={clickHandler()}>Change Title</button>
     </Card>
   );
 }

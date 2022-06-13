@@ -1,12 +1,12 @@
-//deze is niet nodig maar was vroegha wel importatn
-// import React from 'react';
+
 import ExpenseDate from "./ExpenseDate";
 import Card from '../UI/Card'
 import "./ExpenseItem.css";
 //we are now importing a special thing from the react liberary
+//deze is niet nodig maar was vroegha wel importatn
+// import React from 'react';
 import React, {useState} from 'react';
 
-const ExpenseItem = (props) => {
   // const expenseDate = new Date(2021, 2, 28);
   // const expenseTitle = 'Car insurance';
   // const expenseAmount = 234.43;
@@ -19,6 +19,7 @@ const ExpenseItem = (props) => {
   // the useState is in Memory and will be called agan when setTitle() is called
   //---and we want to perfrome the function again, when the state changes
 
+const ExpenseItem = (props) => {
 
 
   const[title, setTitle]  = useState(props.title);
@@ -32,7 +33,7 @@ const ExpenseItem = (props) => {
   return (
     <Card className="expense-item">
         <ExpenseDate date={props.date}/>
-      <div className="eexpense-item__description">
+      <div className="expense-item__description">
         <h2>{title}</h2>
         <div className="expense-item__price">{props.amount}</div>
       </div>

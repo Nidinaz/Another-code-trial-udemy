@@ -21,6 +21,10 @@ import React, {useState} from 'react';
   //state is a keyconcept in react
   //useState registers some stat (some value as state) for the component in which it is beeing called
   // State is seperated on a per componant instance basis
+  //props.title is not overwritten - react keeps track when props.title is beeing used the first time
+  //initial value is executed, when function is called for the first time for a given component, but later it would pick the latest value
+  
+
 
 
 const ExpenseItem = (props) => {

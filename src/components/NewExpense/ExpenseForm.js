@@ -47,7 +47,7 @@ const ExpenseForm = () => {
         date: new Date(enteredDate),
 
       };
-
+      console.log(expenseData);
       setEnteredTitle('');
       setEnteredAmount('');
       setEnteredDate('');

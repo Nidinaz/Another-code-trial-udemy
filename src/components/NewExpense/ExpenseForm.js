@@ -66,6 +66,7 @@ const ExpenseForm = () => {
             type="number"
             min="0.01"
             step="0.01"
+            value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
@@ -75,6 +76,7 @@ const ExpenseForm = () => {
             type="date"
             min="2019-01-01"
             step="2022-12-31"
+            value={enteredDate}
             onChange={dateChangeHandler}
           />
         </div>

@@ -47,6 +47,10 @@ const ExpenseForm = () => {
         date: new Date(enteredDate),
 
       };
+
+      setEnteredTitle('');
+      setEnteredAmount('');
+      setEnteredDate('');
   };
 
   return (

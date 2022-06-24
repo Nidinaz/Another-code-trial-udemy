@@ -34,7 +34,7 @@ const Expenses = (props) => {
             />
            ))
          )}
-                 {/* /* {[<Card />, <Card />]} */
+        {/* /* {[<Card />, <Card />]} */
         /* <div className="expenses">
           <ExpenseItem
             title={props.items[0].title}
